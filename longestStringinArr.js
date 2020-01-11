@@ -9,9 +9,7 @@ function longestStr(arr){
         return firstWord.length >nextWord.length ? firstWord:nextWord;
     });
 }
-//if the longest words are of equal length, 
-//it returns the longest last item in the array 
-
+//if the longest words are of equal length, it returns the longest last item in the array 
 
 //test cases
 longestStr(['ola', 'wiley', 'Jamie', 'Santa', 'Scott', ''])
@@ -23,7 +21,7 @@ longestStr(['ola', 'wiley', 'Jamie', 'Santa', 'Scott', ''])
 function longestStringInArr(arr){
 	var longestValue = 0;
 	var longestString = "";
-
+	//loops through the array length
 	for (let i = 0; i < arr.length ; i++){
 
 		if (arr[i].length > longestValue){
@@ -33,5 +31,4 @@ function longestStringInArr(arr){
 	}
 	return longestString;
 }
-
 longestStr(['ola', 'Hola', 'Ed', "Wiley", 'ddouble', 'presidentT'])
